@@ -1,0 +1,12 @@
+search(number, parent = root)
+
+1) compare number with parent
+    number == parent:true -> parent -> end program !!
+    number < parent -> go step 2
+    number > parent -> go step 2
+
+2) parent has child in that direction?
+    No -> number doesnt exits -> end program !!
+    Yes -> invoke search(number, child)
+
+done
